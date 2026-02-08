@@ -1,0 +1,128 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #ffffff;
+  width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Close button */
+.close-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Sections */
+.modal-section {
+  margin-top: 18px;
+}
+
+.modal-section h4 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Product section */
+.product-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.product-section img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.product-info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.product-info p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.product-info span {
+  font-weight: 600;
+}
+
+.product-info .total {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1a7f37;
+}
+
+/* Grid info */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 15px;
+  font-size: 14px;
+}
+
+.info-grid p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.status {
+  color: #fa8c16;
+  font-weight: 600;
+}
+
+.paid {
+  color: #1a7f37;
+  font-weight: 600;
+}
+
+/* Address */
+.address-box {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+hr {
+  margin-top: 18px;
+  border: none;
+  border-top: 1px solid #eee;
+}

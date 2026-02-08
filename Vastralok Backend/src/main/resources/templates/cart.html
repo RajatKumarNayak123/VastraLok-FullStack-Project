@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        button { padding: 10px 15px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <h1>🛒 My Shopping Cart</h1>
+    <button onclick="loadCart()">Show Cart Items</button>
+
+    <table id="cartTable" style="display:none;">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody">
+        </tbody>
+    </table>
+
+    <script>
+        async function loadCart() {
+            try {
+                const response = await fetch('/api/cart', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    alert("Error loading cart items.");
+                    return;
+                }
+
+                const cartItems = await response.json();
+                const cartBody = document.getElementById('cartBody');
+                cartBody.innerHTML = '';
+
+                cartItems.forEach(item => {
+                    const row = `
+                        <tr>
+                            <td><img src="${item.imgUrl}" alt="${item.name}" width="50"></td>
+                            <td>${item.name}</td>
+                            <td>₹${item.price.toFixed(2)}</td>
+                            <td>${item.quantity}</td>
+                            <td>₹${(item.price * item.quantity).toFixed(2)}</td>
+                        </tr>
+                    `;
+                    cartBody.innerHTML += row;
+                });
+
+                document.getElementById('cartTable').style.display = 'table';
+
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Could not load cart items.");
+            }
+        }
+    </script>
+
+</body>
+</html>

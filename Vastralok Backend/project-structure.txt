@@ -1,0 +1,118 @@
+Folder PATH listing
+Volume serial number is 063E-2B8A
+C:.
+|   .classpath
+|   .factorypath
+|   .project
+|   pom.xml
+|   project-structure.txt
+|   
++---.settings
+|       org.eclipse.core.resources.prefs
+|       org.eclipse.jdt.apt.core.prefs
+|       org.eclipse.jdt.core.prefs
+|       org.eclipse.m2e.core.prefs
+|       org.springframework.ide.eclipse.prefs
+|       
++---src
+|   \---main
+|       +---java
+|       |   \---com
+|       |       \---shopzone
+|       |           |   SpringbootLoginSystemApplication.java
+|       |           |   
+|       |           +---config
+|       |           |       SecurityConfig.java
+|       |           |       
+|       |           +---controller
+|       |           |       AuthController.java
+|       |           |       ProductController.java
+|       |           |       TestController.java
+|       |           |       
+|       |           +---dto
+|       |           |       UserRegistrationDto.java
+|       |           |       
+|       |           +---entity
+|       |           |       Product.java
+|       |           |       User.java
+|       |           |       
+|       |           +---repository
+|       |           |       ProductRepository.java
+|       |           |       UserRepository.java
+|       |           |       
+|       |           \---service
+|       |                   CustomUserDetailsService.java
+|       |                   ProductService.java
+|       |                   
+|       \---resources
+|           |   application.properties
+|           |   
+|           \---templates
+|                   home.html
+|                   login.html
+|                   products.html
+|                   register.html
+|                   
+\---target
+    |   springboot-login-system-1.0.0.jar
+    |   
+    +---classes
+    |   |   application.properties
+    |   |   
+    |   +---com
+    |   |   \---shopzone
+    |   |       |   SpringbootLoginSystemApplication.class
+    |   |       |   
+    |   |       +---config
+    |   |       |       SecurityConfig.class
+    |   |       |       
+    |   |       +---controller
+    |   |       |       AuthController.class
+    |   |       |       ProductController.class
+    |   |       |       TestController.class
+    |   |       |       
+    |   |       +---dto
+    |   |       |       UserRegistrationDto.class
+    |   |       |       
+    |   |       +---entity
+    |   |       |       Product.class
+    |   |       |       User.class
+    |   |       |       
+    |   |       +---repository
+    |   |       |       ProductRepository.class
+    |   |       |       UserRepository.class
+    |   |       |       
+    |   |       \---service
+    |   |               CustomUserDetailsService.class
+    |   |               ProductService.class
+    |   |               
+    |   +---META-INF
+    |   |   |   MANIFEST.MF
+    |   |   |   
+    |   |   \---maven
+    |   |       \---com.shopzone
+    |   |           \---springboot-login-system
+    |   |                   pom.properties
+    |   |                   pom.xml
+    |   |                   
+    |   \---templates
+    |           home.html
+    |           login.html
+    |           products.html
+    |           register.html
+    |           
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---maven-archiver
+    |       pom.properties
+    |       
+    +---maven-status
+    |   \---maven-compiler-plugin
+    |       \---compile
+    |           \---default-compile
+    |                   createdFiles.lst
+    |                   inputFiles.lst
+    |                   
+    \---test-classes

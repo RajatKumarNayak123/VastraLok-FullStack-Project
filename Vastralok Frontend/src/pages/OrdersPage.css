@@ -1,0 +1,274 @@
+/* Orders.css */
+
+/* ✅ Fixed size for all product images */
+.order-image {
+  width: 120px;            /* Fixed width */
+  height: 120px;           /* Fixed height */
+  object-fit: cover;       /* Crop without stretching */
+  border-radius: 8px;      /* Rounded corners */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* ✅ Hover effect for better UI */
+.order-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hide-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hide-btn:hover {
+  background: #cc0000;
+}
+
+
+/* ===========================
+   PROFILE DROPDOWN BUTTONS
+=========================== */
+.profile-dropdown {
+  overflow: hidden;   /* 🔥 safety net */
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  display: none;
+  z-index: 999;
+}
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* 🔹 profile circle icon */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #139277;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.profile-container:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown button {
+  width: 100%;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, padding-left 0.25s ease;   /* 🔥 smooth animation */
+}
+
+/* 🔥 Hover effect – navbar jaisa */
+.profile-dropdown button:hover {
+  background-color: rgba(19, 146, 119, 0.12);
+  transform: scale(1.05);      /* thoda zoom */
+  padding-left: 22px;          /* halka slide right */
+}
+
+.profile-dropdown button:last-child {
+  color: #c0392b;
+  font-weight: 500;
+}
+
+
+.logout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.logout-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  animation: pop 0.3s ease;
+}
+
+.logout-modal h3 {
+  margin-bottom: 10px;
+  color: #006e65;
+}
+
+.logout-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yes-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.yes-btn:hover {
+  background: #d93636;
+}
+
+.no-btn {
+  background: #eee;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.no-btn:hover {
+  background: #ccc;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.thankyou-modal {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+.thankyou-modal h2 {
+  color: #006e65;
+  margin-bottom: 10px;
+}
+
+.thankyou-modal h1 {
+  color: #007b5e;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.thankyou-modal p {
+  color: #555;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.order-placed-banner {
+  background: #e6fff3;
+  color: #0b8457;
+  border: 1px solid #0b8457;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.top-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.top-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+.brand-logo {
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 24px;
+  display: inline-block;   /* underline control ke liye */
+}
+
+.brand-logo:hover {
+  text-decoration: underline;
+}
+
+
+.brand-logo {
+  position: relative;
+}
+
+.brand-logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+
+.brand-logo:hover::after {
+  width: 100%;
+}
+
+
+
+
+

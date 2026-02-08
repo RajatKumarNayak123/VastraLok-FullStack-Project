@@ -1,0 +1,89 @@
+.rewards-container {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.points-box {
+  background: linear-gradient(135deg, #ffb300, #ff6f00);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.points-value {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.level span {
+  font-weight: bold;
+}
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress-fill {
+  background: white;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.upgrade-info {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.reward-list {
+  display: grid;
+  gap: 15px;
+}
+
+.reward-card {
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.redeem-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.redeem-btn.disabled {
+  background: gray;
+  cursor: not-allowed;
+}

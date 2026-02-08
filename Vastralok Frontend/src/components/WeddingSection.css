@@ -1,0 +1,58 @@
+.wedding-section {
+  background-image: url("https://images.unsplash.com/photo-1605559424843-38f8c7d1f6f0");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.wedding-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive grid auto-adjust */
+.wedding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.wedding-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wedding-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.wedding-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wedding-info h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 10px 0 5px;
+}
+
+.wedding-info p {
+  color: #c2185b;
+  font-weight: bold;
+  margin: 0;
+}
