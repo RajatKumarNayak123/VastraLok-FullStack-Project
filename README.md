@@ -86,27 +86,33 @@ MySQL Database
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](Screenshots/Login-Page.png)
+
+
+### Home Page
+
+![Home Page](Screenshots/Home-Page.png)
+
 
 ### Product Listing
 
-![Products](screenshots/products.png)
+![Products](Screenshots/Product-Listing.png)
 
 ### Product Details
 
-![Product Details](screenshots/product-details.png)
+![Product Details](Screenshots/Product-Page.png)
 
 ### Cart Page
 
-![Cart](screenshots/cart.png)
+![Cart](Screenshots/Cart-Items.png)
 
 ### Checkout / Payment
 
-![Checkout](screenshots/checkout.png)
+![Checkout](Screenshots/Payment-Page.png)
 
 ### Orders Page
 
-![Orders](screenshots/orders.png)
+![Orders](Screenshots/My-Orders.png)
 
 ---
 
